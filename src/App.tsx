@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css' ;
+import './App.css';
 
 const tasks = [
   'Пенальти пиром',
@@ -52,8 +52,9 @@ const tasks = [
   'Перехват и гол',
   'Подсветка вратаря',
   'Гол "передачей"',
-]; // Обновленный список заданий
-; // Список заданий
+]; 
+  // ... // Обновленный список заданий
+
 const numbers = [0, 500, 1500, 3000, 5000, 8000, 13000]; // Список чисел, добавлено начальное число 0
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
 
   const handleLose = () => {
     setPopupVisible(false);
+    setCurrentNumberIndex(0); // Сбрасываем указатель на ноль при проигрыше
   };
 
   const handleBank = () => {
@@ -131,5 +133,4 @@ function App() {
 }
 
 export default App;
-
 
